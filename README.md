@@ -1,60 +1,42 @@
 # 📊 Customer Demographics Study
 
-A comprehensive Data Analytics and Machine Learning project that analyzes customer demographic data to uncover valuable business insights, perform customer segmentation, and predict customer value tiers using multiple machine learning algorithms.
+An end-to-end Data Analytics and Machine Learning project that explores customer demographic data to identify behavioral patterns, perform customer segmentation, build predictive models, and present business insights through an interactive Streamlit dashboard.
 
 ---
 
 ## 📌 Project Overview
 
-Understanding customer demographics is essential for businesses to improve marketing strategies, customer engagement, and revenue generation.
+Understanding customer demographics enables organizations to improve customer engagement, optimize marketing strategies, and make data-driven business decisions.
 
-This project performs:
+This project includes:
 
-- Data Cleaning & Preprocessing
+✔ Data Cleaning & Preprocessing
+
+✔ Exploratory Data Analysis (EDA)
+
+✔ Feature Engineering
+
+✔ Customer Segmentation using K-Means Clustering
+
+✔ Predictive Machine Learning Models
+
+✔ Interactive Streamlit Dashboard
+
+✔ Business Insight Generation
+
+---
+
+## 🚀 Features
+
+- Data preprocessing and cleaning
+- Missing value handling
+- Feature engineering
 - Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Customer Segmentation using K-Means
+- Customer Segmentation
 - Machine Learning Classification
-- Interactive Streamlit Dashboard
-- Business Insight Generation
-
----
-
-## 🎯 Objectives
-
-- Analyze customer demographic patterns
-- Identify high-value customer segments
-- Predict customer value tier
-- Compare multiple Machine Learning models
-- Build an interactive dashboard for business users
-
----
-
-## 📂 Project Structure
-
-```
-Customer-Demographics-Study/
-│
-├── data/
-│   └── shopping_trends_updated.csv
-│
-├── notebooks/
-│   └── Customer_Demographics_Study.ipynb
-│
-├── dashboard/
-│   └── app.py
-│
-├── reports/
-│   ├── CustomerDemographics_Report.pdf
-│   ├── Customer_Demographics_Study.pdf
-│   └── Outputs.pdf
-│
-├── images/
-│
-├── requirements.txt
-│
-└── README.md
-```
+- Model Evaluation
+- Interactive Dashboard using Streamlit
+- Business recommendations based on customer behavior
 
 ---
 
@@ -65,14 +47,15 @@ Customer-Demographics-Study/
 - NumPy
 - Matplotlib
 - Seaborn
+- Plotly
 - Scikit-learn
 - Streamlit
 
 ---
 
-## 📈 Machine Learning Models
+## 🤖 Machine Learning Models
 
-The project implements and compares:
+The project compares multiple machine learning algorithms including:
 
 - Logistic Regression
 - Decision Tree Classifier
@@ -82,61 +65,80 @@ The project implements and compares:
 
 ---
 
-## 📊 Exploratory Data Analysis
+## 📈 Dashboard Features
 
-The project includes visualizations such as:
+The interactive Streamlit dashboard provides:
 
-- Age Distribution
+- Customer KPIs
+- Interactive Filters
+- Purchase Analysis
 - Gender Distribution
-- Income Distribution
-- Spending Score Analysis
-- Customer Value Tier Distribution
+- Category-wise Sales
+- Seasonal Purchase Trends
+- Subscription Analysis
+- Payment Method Analysis
+- Customer Location Analysis
+- Review Rating Distribution
+- Shipping Preference Analysis
+- Revenue Insights
+- Purchase Frequency Analysis
+
+---
+
+## 📂 Repository Structure
+
+```
+Customer-Demographics-Study/
+│
+├── 📓 codetwo(3).ipynb
+│
+├── 📄 customer_demographics_dashboard.py
+│
+├── 📊 shopping_trends_updated.csv
+│
+├── 📘 Customer_Demographics_Study.pdf
+│
+├── 📘 CustomerDemographics_Report_AnushkaJain.pdf
+│
+├── 📘 Customer_Demographics_Study_Outputs.pdf
+│
+└── 📄 README.md
+```
+
+---
+
+## 📊 Visualizations
+
+The project contains various visualizations including:
+
+- Customer Age Distribution
+- Gender Distribution
+- Purchase Amount Analysis
+- Category-wise Revenue
+- Seasonal Purchase Trends
+- Payment Method Distribution
+- Subscription Analysis
+- Customer Segmentation (K-Means)
+- PCA Cluster Visualization
 - Correlation Heatmap
 - Feature Importance
-- Customer Segmentation (PCA)
 - Elbow Method
 - Confusion Matrix
 - Model Performance Comparison
 
 ---
 
-## ⚙️ Feature Engineering
-
-Created additional features including:
-
-- Age Group
-- Income Category
-- Spending Category
-- Family Type
-- Purchase Frequency Group
-- Occupation Group
-- Customer Value Tier
-
----
-
 ## 📌 Key Insights
 
-- Customer data can be grouped into four major value segments.
-- Spending Score and Purchase Frequency are the strongest indicators of customer value.
-- Random Forest achieved one of the best prediction performances.
-- Customer segmentation helps businesses identify premium customers and improve targeted marketing strategies.
+- Customer segmentation identifies different customer behavior groups.
+- Spending behavior varies across demographic categories.
+- Random Forest and Decision Tree achieved strong predictive performance.
+- K-Means clustering effectively groups customers based on purchasing patterns.
+- Interactive dashboards simplify business decision-making through visual analytics.
 
 ---
 
-## 📷 Dashboard
-
-The Streamlit dashboard provides:
-
-- KPI Cards
-- Interactive Filters
-- Customer Distribution Analysis
-- Segmentation Visualization
-- Model Performance Comparison
-- Business Insights
-
----
-
-## 🚀 How to Run
+## ▶️ Getting Started
 
 ### Clone Repository
 
@@ -144,38 +146,78 @@ The Streamlit dashboard provides:
 git clone https://github.com/your-username/Customer-Demographics-Study.git
 ```
 
+---
+
 ### Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn plotly scikit-learn streamlit
+```
+
+or
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Notebook
+---
 
-Open the Jupyter Notebook and execute all cells.
+### Run the Notebook
 
-### Launch Dashboard
+Open
+
+```text
+codetwo(3).ipynb
+```
+
+using Jupyter Notebook or Google Colab.
+
+---
+
+### Run the Dashboard
 
 ```bash
-streamlit run app.py
+streamlit run customer_demographics_dashboard.py
 ```
 
 ---
 
 ## 📁 Dataset
 
-Customer Demographics Dataset containing demographic, behavioral, and purchasing information.
+**Dataset:** `shopping_trends_updated.csv`
+
+The dataset contains customer demographic and purchasing information including:
+
+- Age
+- Gender
+- Category
+- Purchase Amount
+- Payment Method
+- Season
+- Subscription Status
+- Shipping Type
+- Review Rating
+- Previous Purchases
+- Promo Code Usage
+- Location
 
 ---
 
-## 📌 Results
+## 📄 Reports Included
 
-- Cleaned and preprocessed customer dataset
-- Built multiple predictive models
-- Generated interactive visualizations
-- Created customer segments
-- Developed an interactive Streamlit dashboard
-- Produced business recommendations based on customer behavior
+- Customer Demographics Study Report
+- Customer Demographics Outputs
+- Internship Project Report
+
+---
+
+## 🎯 Project Outcome
+
+- Built an end-to-end customer analytics pipeline.
+- Performed demographic profiling and customer segmentation.
+- Compared multiple machine learning models.
+- Generated meaningful business insights.
+- Developed an interactive Streamlit dashboard for data exploration.
 
 ---
 
@@ -183,8 +225,8 @@ Customer Demographics Dataset containing demographic, behavioral, and purchasing
 
 **Anushka Jain**
 
-Data Analytics Project
+Data Analytics Intern
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a Star!
+### ⭐ If you found this project helpful, consider giving it a Star!
